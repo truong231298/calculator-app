@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  font-family: "League Spartan", sans-serif;
+}
+
+.switch {
+  position: relative;
+  height: 32px;
+  width: 100px;
+
+  background: #F2F2F2;
+  background: #D7D7D7;
+  border-radius: 32px;
+}
+.switch-label {
+  font-weight: bold;
+  position: absolute;
+  z-index: 1;
+  width: 100px;
+  line-height: 32px;
+  font-size: 16px;
+  color: black;
+  cursor: pointer;
+}
+
+.switch-selector {
+  position: absolute;
+  z-index: 1;
+  top: 5px;
+  left: 5px;
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-radius: 32px;
+  background-color: #1ab394;
+  transition: all 0.3s cubic-bezier(0.18, 0.89, 0.32, 1.28);
+}
+input[type="radio"] {
+  display: none;
+  margin-right: 1rem;
+  
+}
+
